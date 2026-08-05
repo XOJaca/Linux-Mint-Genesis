@@ -114,14 +114,6 @@ sudo flatpak update
 
 ---
 
-# 📌 Versão
-
-**Linux Mint Genesis**
-
-Version **1.0**
-
----
-
 # 📄 Licença
 
 Este projeto é disponibilizado gratuitamente para uso pessoal e aprendizado. Sinta-se à vontade para estudar, modificar e adaptar o código conforme suas necessidades.

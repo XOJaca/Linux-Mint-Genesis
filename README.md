@@ -19,7 +19,7 @@ Atualmente ele é capaz de:
 * 🌐 Configurar automaticamente o DNS da Cloudflare
 * 🎥 Instalar e configurar o MPV utilizando Vulkan (Assim tendo Suporte a usar o LSFG-VK no MPV + Legendas Amarelas)
 * 🎮 Preparar o ambiente para jogos via Proton e DXVK
-* 💻 Instalar Google Chrome, Brave, Steam e Visual Studio Code
+* 💻 Instalar Google Chrome, Brave e Steam nas versões oficiais (Debian)
 
 ---
 

@@ -13,8 +13,7 @@ O Linux Mint Genesis automatiza diversas tarefas realizadas após uma instalaç�
 Atualmente ele é capaz de:
 
 * 📦 Atualizar completamente o sistema
-* 🛠️ Instalar programas essenciais
-* 📦 Configurar suporte ao Flatpak
+* 🛠️ Instalar programas essenciais em Debian e em Flatpak
 * 🎬 Instalar e configurar o YT-DLP
 * 🎨 Aplicar tema, ícones e configurações personalizadas do Cinnamon
 * 🌐 Configurar automaticamente o DNS da Cloudflare

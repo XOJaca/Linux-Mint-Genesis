@@ -62,7 +62,8 @@ Linux Mint Genesis (Post-Install)
 1. Baixe a versão mais recente do **Linux Mint Genesis** na seção **Releases** deste repositório.
 2. Extraia o arquivo `.zip` em qualquer pasta de sua preferência.
 3. Abra a pasta extraída.
-4. Clique com o botão direito em `setup.sh` e escolha **Abrir no Terminal**.
+4. Clique com o botão direito em `setup.sh` e escolha **Abrir no Terminal**
+
 4.2. Caso não tenha essa opção, então aperte com o botão direito do mouse na pasta baixada e aperte em "Abrir no Terminal"
 4.3. Execute então o seguinte código:
 

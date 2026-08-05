@@ -40,7 +40,7 @@ Linux Mint Genesis (Post-Install)
 │   ├── 06-network-config.sh
 │   ├── 07-mpv-config.sh
 │   ├── 08-gaming-environment.sh
-│   └── 09-deb-applications.sh
+│   └── 09-desktop-applications.sh
 ├── setup.sh
 ├── VERSION
 └── README.md
@@ -91,7 +91,7 @@ O Genesis executará automaticamente todos os módulos na ordem correta.
 | `06-network-config.sh`         | Configura automaticamente o DNS da Cloudflare            |
 | `07-mpv-config.sh`             | Instala e configura o MPV utilizando Vulkan              |
 | `08-gaming-environment.sh`     | Configura o ambiente para Proton e DXVK                  |
-| `09-deb-applications.sh`       | Instala Google Chrome, Brave, Steam e Visual Studio Code |
+| `09-desktop-applications.sh`   | Instala Google Chrome, Brave, Steam e Audacity           |
 
 ---
 

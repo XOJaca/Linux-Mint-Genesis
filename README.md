@@ -64,11 +64,6 @@ Linux Mint Genesis (Post-Install)
 2. Extraia o arquivo `.zip` em qualquer pasta de sua preferência.
 3. Abra a pasta extraída.
 4. Clique com o botão direito em `setup.sh` e escolha **Abrir no Terminal**.
-5. Execute:
-
-```bash
-./setup.sh
-```
 
 O Genesis executará automaticamente todos os módulos na ordem correta.
 

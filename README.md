@@ -1,6 +1,6 @@
 # Linux Mint Genesis (Post-Install)
 
-Automação do meu ambiente Linux Mint após uma instalação limpa, deixando o sistema mais bonito e pronto para uso com alguns programas, configurações e personalizações favoritas.
+Automação do meu ambiente Linux Mint após uma instalação limpa, deixando o sistema mais bonito e pronto para uso com alguns programas, configurações e personalizações bases favoritas.
 
 Um pequeno presente para qualquer **distro-hopper** como eu que sempre que puder, ter a possibilidade de voltar para o Linux Mint já pronto, mas não gosta de repetir sempre alguns dos mesmos processos de instalação e configuração.
 

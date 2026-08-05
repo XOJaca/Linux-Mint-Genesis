@@ -69,6 +69,7 @@ Linux Mint Genesis (Post-Install)
 Execute então o seguinte código:
 
 ```bash
+chmod +x setup.sh
 ./setup.sh
 ```
 

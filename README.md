@@ -1,61 +1,132 @@
-# Linux-Mint-Genesis
+# Linux Mint Genesis (Post-Install)
 
+Automação do meu ambiente Linux Mint após uma instalação limpa, deixando o sistema pronto para uso com meus programas, configurações e personalizações favoritas.
+
+Um pequeno presente para qualquer **distro-hopper** que gosta de testar distribuições Linux, mas não gosta de repetir sempre o mesmo processo de configuração.
+
+---
+
+# ✨ Recursos
+
+O Linux Mint Genesis automatiza diversas tarefas realizadas após uma instalação limpa do sistema.
+
+Atualmente ele é capaz de:
+
+* 📦 Atualizar completamente o sistema
+* 🛠️ Instalar programas essenciais
+* 📦 Configurar suporte ao Flatpak
+* 🎬 Instalar e configurar o YT-DLP
+* 🎨 Aplicar tema, ícones e configurações personalizadas do Cinnamon
+* 🌐 Configurar automaticamente o DNS da Cloudflare
+* 🎥 Instalar e configurar o MPV utilizando Vulkan
+* 🎮 Preparar o ambiente para jogos via Proton e DXVK
+* 💻 Instalar Google Chrome, Brave, Steam e Visual Studio Code
+
+---
+
+# 📂 Estrutura do Projeto
+
+```text
 Linux Mint Genesis (Post-Install)
+├── configs/
+│   ├── cinnamon/
+│   ├── icons/
+│   └── themes/
+├── modules/
+│   ├── 01-system-update.sh
+│   ├── 02-essential-packages.sh
+│   ├── 03-flatpak.sh
+│   ├── 04-yt-dlp.sh
+│   ├── 05-cinnamon-customization.sh
+│   ├── 06-network-config.sh
+│   ├── 07-mpv-config.sh
+│   ├── 08-gaming-environment.sh
+│   └── 09-deb-applications.sh
+├── setup.sh
+├── VERSION
+└── README.md
+```
 
-Automação do meu ambiente Linux Mint após uma instalação limpa, deixando o sistema pronto para uso prático, com minhas configurações pessoais, programas essenciais e ajustes que costumo aplicar em toda nova instalação.
-Um pequeno presente para um “distro-hopper” que gosta de testar sistemas, mas quer recuperar rapidamente o ambiente familiar.
+---
 
+# 📋 Requisitos
 
-Objetivos
-	Instalar programas essenciais
-	Configurar aplicações automaticamente
-	Aplicar personalizações do Cinnamon
-	Configurar ferramentas multimídia
-	Preparar ambiente para jogos
-	Instalar aplicativos oficiais externos
-	Economizar tempo após formatações
+* Linux Mint instalado recentemente
+* Conexão com a internet
+* Usuário com permissões de administrador (`sudo`)
+* Arquitetura **amd64 (x86_64)**
 
+---
 
-Requisitos
-	Linux Mint instalado recentemente
-	Conexão com a internet
-	Usuário com permissões de administrador (sudo)
+# 🚀 Como utilizar
 
+1. Baixe a versão mais recente do **Linux Mint Genesis** na seção **Releases** deste repositório.
+2. Extraia o arquivo `.zip` em qualquer pasta de sua preferência.
+3. Abra a pasta extraída.
+4. Clique com o botão direito em `setup.sh` e escolha **Abrir no Terminal**.
+5. Execute:
 
-Como utilizar
-Copie ou clone o projeto para o computador e execute:
-chmod +x setup.sh
+```bash
 ./setup.sh
-O script principal executará todos os módulos automaticamente.
+```
 
+O Genesis executará automaticamente todos os módulos na ordem correta.
 
+> Durante a execução será solicitada a senha do usuário (`sudo`) para instalar programas e aplicar configurações no sistema.
 
-Módulos
-O Genesis é dividido em módulos independentes:
-Módulo	Função
-01-system-update.sh	Atualização inicial do sistema
-02-essential-packages.sh	Instala ferramentas básicas
-03-flatpak.sh	Instala aplicações via Flatpak
-04-yt-dlp.sh	Instala e configura o YT-DLP
-05-cinnamon-customization.sh	Aplica tema, ícones e configurações do Cinnamon
-06-network-config.sh	Configura DNS da Cloudflare
-07-mpv-config.sh	Instala e configura o MPV com Vulkan
-08-gaming-environment.sh	Ajustes para jogos via Proton e DXVK
-09-deb-applications.sh	Instala aplicativos oficiais em formato DEB (Chrome, Brave, Steam e VS Code)
+---
 
-NVIDIA
-Caso o sistema possua uma placa NVIDIA:
-1.	Abra o Gerenciador de Drivers.
-2.	Selecione a versão mais recente disponível (não necessariamente a recomendada pelo sistema).
-3.	Aplique as alterações.
-4.	Reinicie o computador.
-Após reiniciar:
-	abra o Gerenciador de Atualizações;
-	atualize o sistema;
-	caso as atualizações dos Flatpaks não apareçam, execute:
+# 📦 Módulos
+
+| Módulo                         | Função                                                   |
+| ------------------------------ | -------------------------------------------------------- |
+| `01-system-update.sh`          | Atualiza o sistema e seus pacotes                        |
+| `02-essential-packages.sh`     | Instala programas e dependências essenciais              |
+| `03-flatpak.sh`                | Configura o Flatpak e instala aplicações                 |
+| `04-yt-dlp.sh`                 | Instala e configura o YT-DLP                             |
+| `05-cinnamon-customization.sh` | Aplica tema, ícones e configurações do Cinnamon          |
+| `06-network-config.sh`         | Configura automaticamente o DNS da Cloudflare            |
+| `07-mpv-config.sh`             | Instala e configura o MPV utilizando Vulkan              |
+| `08-gaming-environment.sh`     | Configura o ambiente para Proton e DXVK                  |
+| `09-deb-applications.sh`       | Instala Google Chrome, Brave, Steam e Visual Studio Code |
+
+---
+
+# 🎮 NVIDIA
+
+Caso o computador utilize uma placa de vídeo NVIDIA, recomenda-se realizar os seguintes passos após a execução do Genesis:
+
+1. Abra o **Gerenciador de Drivers**.
+2. Selecione a versão mais recente disponível (não necessariamente a recomendada).
+3. Aplique as alterações.
+4. Reinicie o computador.
+
+Após reiniciar, abra o **Gerenciador de Atualizações** e instale todas as atualizações disponíveis.
+
+Caso as atualizações dos aplicativos Flatpak não apareçam, execute:
+
+```bash
 sudo flatpak update
+```
 
-Observações
-Algumas configurações aplicadas pelo Genesis podem exigir uma reinicialização para funcionar corretamente.
-Recomenda-se reiniciar o sistema após a execução completa do setup.
+---
 
+# ⚠️ Observações
+
+* Algumas configurações podem exigir uma reinicialização para serem aplicadas corretamente.
+* O projeto foi desenvolvido e testado para o **Linux Mint Cinnamon**.
+* Os módulos podem ser executados individualmente, caso seja necessário.
+
+---
+
+# 📌 Versão
+
+**Linux Mint Genesis**
+
+Version **1.0**
+
+---
+
+# 📄 Licença
+
+Este projeto é disponibilizado gratuitamente para uso pessoal e aprendizado. Sinta-se à vontade para estudar, modificar e adaptar o código conforme suas necessidades.

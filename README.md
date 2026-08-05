@@ -17,7 +17,7 @@ Atualmente ele é capaz de:
 * 🎬 Instalar e configurar o YT-DLP
 * 🎨 Aplicar tema, ícones e configurações personalizadas do Cinnamon
 * 🌐 Configurar automaticamente o DNS da Cloudflare
-* 🎥 Instalar e configurar o MPV utilizando Vulkan
+* 🎥 Instalar e configurar o MPV utilizando Vulkan (Assim tendo Suporte a usar o LSFG-VK no MPV)
 * 🎮 Preparar o ambiente para jogos via Proton e DXVK
 * 💻 Instalar Google Chrome, Brave, Steam e Visual Studio Code
 
